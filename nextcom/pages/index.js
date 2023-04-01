@@ -1,29 +1,21 @@
 import React from 'react'
 import { client } from '../lib/client'
-
 import { Product, HeroBanner, FooterBanner } from '../components'
+
 const Home = ({ products, bannerData }) => {
   return (
     <div>
-      <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-
-        {console.log(bannerData)}
-
-
-        <div className='products-heading'>
-          <h2>Best selling Products</h2>
-          <p> Speakers of many variants </p>
-        </div>
-
-        <div className='products-container'>
-          {products?.map((product) => product.className)}
-        </div>
-
-        Footer
-
-        <FooterBanner />
-      </>
+      <div className='products-heading'>
+        <h2>Best selling Products</h2>
+        <p> Speakers of many variants </p>
+      </div>
+      <div className='products-container'>
+        {products.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+      <FooterBanner FooterBanner={bannerData && bannerData[0]} />
     </div>
   )
 }
@@ -40,4 +32,4 @@ export const getStaticProps = async () => {
   }
 }
 
-export default Home
+export default Home;
