@@ -1,3 +1,4 @@
+import product from '@/sanity-ecom/schemas/product';
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import { toast } from 'react-hot-toast'
 const Context = createContext();
@@ -9,6 +10,9 @@ export const StateContext = ({ children }) => {
     const [totalPrice, setTotalPrice] = useState(0);
     const [totalQuantities, setTotalQuantities] = useState(0);
     const [qty, setQty] = useState(1);
+
+    let foundProduct;
+    let index;
 
     const onAdd = (product, quantity) => {
         const checkProductInCart = cartItems.find((item) => item._id === product._id);
@@ -30,6 +34,33 @@ export const StateContext = ({ children }) => {
             setCartItems([...cartItems, { ...product }]);
         }
         toast.success(`${quantity} ${product.name} added to cart`);
+    }
+    // # this togglecartitemquantity function is  for the cart page to increase and decrease the quantity of the product in the cart.
+    const toggleCartItemQuanitity = (id, value) => {
+        foundProduct = cartItems.find((item) => item._id === id);
+        index = cartItems.findIndex((item) => item._id === id);
+
+        // # This if statement logic is for the increase button in the cart page and it will increase the quantity of the product in the cart.
+        if (value === 'inc') {
+            let newCartItems = [...cartItems,
+            { ...foundProduct, quantity: foundProduct.quantity + 1 }];
+            setCartItems(newCartItems);
+            // # This setTotalPrice and setTotalQuantities are for the total price and total quantity of the product in the cart. 
+            setTotalPrice((prevPrice) => prevPrice + foundProduct.price);
+            setTotalQuantities((prevQuantities) => prevQuantities + 1);
+
+            // # Ths else if statement logic is for the decrease button in the cart page and it will not decrease the quantity if the quantity is 1.
+        } else if (value === 'dec') {
+            // # This if statement inside of else if statement is for to check the quantity of the product in the cart is 1 or not. and if the quantity is 1 then it will not decrease the quantity. 
+            if (foundProduct.quantity > 1) {
+                let newCartItems = [...cartItems,
+                { ...foundProduct, quantity: foundProduct.quantity - 1 }];
+                setCartItems(newCartItems);
+
+                setTotalPrice((prevPrice) => prevPrice - foundProduct.price);
+                setTotalQuantities((prevQuantities) => prevQuantities - 1);
+            }
+        }
     }
 
     const incQty = () => {
@@ -55,6 +86,7 @@ export const StateContext = ({ children }) => {
                 incQty,
                 decQty,
                 onAdd,
+                toggleCartItemQuanitity
             }}
         >
             {children}
