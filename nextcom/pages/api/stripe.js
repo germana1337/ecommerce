@@ -15,6 +15,7 @@ export default async function handler(req, res) {
                     {
                       
                         shipping_rate: 'shr_1Mta4LL2b18r387uAvcNoVDo',
+                        shipping_rate: 'shr_1Mta4LL2b18r387uAvcNoVDo',
                     }
                 ],
                 line_items: req.body.map((item) => {
@@ -55,3 +56,4 @@ export default async function handler(req, res) {
         res.status(405).end('Method Not Allowed');
     }
 }
+
