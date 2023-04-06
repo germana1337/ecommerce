@@ -15,7 +15,7 @@ export default async function handler(req, res) {
                     {
                       
                         shipping_rate: 'shr_1Mta4LL2b18r387uAvcNoVDo',
-                        shipping_rate: 'shr_1Mta4LL2b18r387uAvcNoVDo',
+                        
                     }
                 ],
                 line_items: req.body.map((item) => {
