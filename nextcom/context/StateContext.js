@@ -45,7 +45,7 @@ export const StateContext = ({ children }) => {
         if (!foundProduct) return;
         const index = cartItems.indexOf(foundProduct);
         const newCartItems = [...cartItems];
-        const newTotalPrice = totalPrice + (value === 'inc' ? foundProduct.price : -foundProduct.price);
+        const newTotalPrice = totalPrice + (value === 'inc' ? foundProduct.price : -foundProduct.price) * foundProduct.quantity;
         const newTotalQuantities = totalQuantities + (value === 'inc' ? 1 : -1);
         const newQuantity = foundProduct.quantity + (value === 'inc' ? 1 : -1);
         if (newQuantity > 0) {
@@ -55,6 +55,7 @@ export const StateContext = ({ children }) => {
             setTotalQuantities(newTotalQuantities);
         }
     };
+    
 
     const incQty = () => setQty((prevQty) => prevQty + 1);
 
@@ -76,7 +77,13 @@ export const StateContext = ({ children }) => {
         onAdd,
         toggleCartItemQuanitity,
         onRemove,
+        setCartItems,
+        setTotalPrice,
+        setTotalQuantities,
+
     };
+
+    
     //! # This is the provider that wraps the children and passes the value to the children and i use it in the _app.js file.
     return <Context.Provider value={value}>{children}</Context.Provider>;
 };

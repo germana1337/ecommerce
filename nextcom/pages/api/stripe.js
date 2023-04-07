@@ -13,19 +13,18 @@ export default async function handler(req, res) {
                 billing_address_collection: 'auto',
                 shipping_options: [
                     {
-
-                        shipping_rate: 'shr_1Mta4LL2b18r387uAvcNoVDo',
-
+                        shipping_rate: 'shr_1MuGpTL2b18r387uPLbVSQ2i',
                     }
                 ],
-                
+
                 line_items: req.body.map((item) => {
                     const img = item.image[0].asset._ref;
-                    const newImage = img.replace('image-', 'https://cdn.sanity.io/images/6q3gz3di/production/').replace('-webp', '.webp');
+                    const newImage = img.replace('image-', 'https://cdn.sanity.io/images/6q3gz3di/production/').replace('-webp', '.webp', '.jpg', '.jpeg', '.png');
 
                     return {
                         price_data: {
-                            currency: 'usd',
+
+                            currency: 'gel',
                             product_data: {
                                 name: item.name,
                                 images: [newImage]

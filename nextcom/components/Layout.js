@@ -41,7 +41,12 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer>
+        <div className='space'>
+        </div>
         <Footer />
+        <div className='reserved'>
+          <p>© 2021 iMax Music Store. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   )

@@ -20,29 +20,7 @@ const Cart = () => {
     onRemove }
     = useStateContext();
 
-
-
-  // const handleCheckout = async () => {
-  //   const stripe = await getStripe();
-  //   console.log(cartItems);
-  //   try {
-  //     const { data } = await axios.post(
-  //       "/api/stripe",
-  //       JSON.stringify({ cartItems })
-  //     );
-
-  //     if (data.status === 500) {
-  //       return toast.error('Something went wrong');
-  //     }
-
-  //     toast.loading('Redirecting to checkout...');
-
-  //     stripe.redirectToCheckout({ sessionId: data.id });
-  //   } catch (error) {
-  //     console.error('Error during checkout:', error);
-  //     toast.error('Something went wrong');
-  //   }
-  // };
+    
   const handleCheckout = async () => {
     const stripe = await getStripe();
 
@@ -62,18 +40,6 @@ const Cart = () => {
 
     stripe.redirectToCheckout({ sessionId: data.id });
   }
-
-  // const createPaymentIntent = async () => {
-  //   try {
-  //     const { data } = await axios.post(
-  //       "/api/stripe",
-  //       JSON.stringify({ cartItems })
-  //     );
-
-  //   } catch (error) {
-  //     console.log(error.response);
-  //   }
-  // };
 
 
   return (
@@ -140,7 +106,7 @@ const Cart = () => {
           <div className="cart-bottom">
             <div className="total">
               <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
+              <h3>{totalPrice} GEL </h3>
             </div>
             <div className='btn-container' >
               <form action="/api/stripe" method="POST">
