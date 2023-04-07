@@ -13,11 +13,12 @@ export default async function handler(req, res) {
                 billing_address_collection: 'auto',
                 shipping_options: [
                     {
-                      
+
                         shipping_rate: 'shr_1Mta4LL2b18r387uAvcNoVDo',
-                        
+
                     }
                 ],
+                
                 line_items: req.body.map((item) => {
                     const img = item.image[0].asset._ref;
                     const newImage = img.replace('image-', 'https://cdn.sanity.io/images/6q3gz3di/production/').replace('-webp', '.webp');
@@ -40,8 +41,8 @@ export default async function handler(req, res) {
                 }),
 
 
-                success_url: `${req.headers.origin}/?success=true`,
-                cancel_url: `${req.headers.origin}/?canceled=true`,
+                success_url: `${req.headers.origin}/success`,
+                cancel_url: `${req.headers.origin}/canceled`,
                 automatic_tax: { enabled: true },
 
             }
@@ -57,3 +58,4 @@ export default async function handler(req, res) {
     }
 }
 
+//! # We've problem to make request to backend to get items for stripe and the problem was we dont needed to in checkout session from body params we remove .Cartitems and also we've mistake in adjustable quantity 'minmum' instead of 'minimum' also we import stripe from stripe and make function like const stripe = const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
