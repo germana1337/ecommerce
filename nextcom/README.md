@@ -1,4 +1,4 @@
-## STABLESTACK - E-COMMERCE
+## StableStack  E-COMMERCE
 
 [StableStack] is a dynamic website built with Next.js and Sanity Studio. It uses Stripe payment system for transactions and all the content comes from Sanity Studio, which makes it easy for team members or other authorized persons to add and update content dynamically.
 
