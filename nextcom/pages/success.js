@@ -14,7 +14,7 @@ const Success = () => {
     setTotalQuantities(0) // # This is the function that fires the confetti.
     fireConfetti() // # This is the function that fires the confetti.
   }, [])
-  
+
   return (
     <div className="success-wrapper">
       <div className="success">
