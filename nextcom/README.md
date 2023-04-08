@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## StableStack  E-COMMERCE
 
-## Getting Started
+[StableStack] is a dynamic website built with Next.js and Sanity Studio. It uses Stripe payment system for transactions and all the content comes from Sanity Studio, which makes it easy for team members or other authorized persons to add and update content dynamically.
 
-First, run the development server:
+Installation [StableStack]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To install the project, simply run the following command:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install or yarn install
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Additionally, you will need to install Sanity Studio by running:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+npm install sanity-studio or yarn add sanity-studio
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[StableStack] is easy to use, as all the content is managed dynamically through Sanity Studio. Users can simply log in to Sanity Studio and add, update, or delete content as needed. Stripe payment system is integrated into the website for secure and hassle-free transactions.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+[StableStack] is built with Next.js, a popular React framework that offers server-side rendering and automatic code splitting, making it fast and efficient. Additionally, Sanity Studio is used for managing content, which is a powerful and flexible CMS that offers real-time collaboration and easy customization.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Why Next.js, Sanity Studio, and Stripe
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Next.js, Sanity Studio, and Stripe are all powerful tools that make development faster, more efficient, and more secure. Next.js offers server-side rendering, which improves performance and SEO, and also provides automatic code splitting, which reduces load times. Meanwhile, Sanity Studio is a flexible and customizable CMS that makes it easy to manage content and collaborate in real-time. Stripe payment system offers easy-to-use APIs that allow developers to securely integrate payment functionality into their websites and applications.
 
-## Deploy on Vercel
+# Contact Information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Hey there! My name is Nika Germanishvili, and I'm the developer behind this awesome project. As a junior developer with a background in responsive design, I'm always looking to improve my skills and take on new challenges. I graduated from the Academy of Digital Industry and have been working hard on this project using some amazing tools like Next.js, Sanity Studio, and Stripe.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions or feedback about the project, feel free to reach out to me at for personal  email adress [nikagermanishvili@gmail.com], and here is my second Working email adress [germanxcardinal@gmail.com]. I'd love to hear from you and get your thoughts on the project.
+
+# Thanks for checking out my work, and I hope you enjoy using [StableStack] !
+
+
