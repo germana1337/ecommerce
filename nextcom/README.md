@@ -24,12 +24,15 @@ npm install sanity-studio or yarn add sanity-studio
 
 Next.js, Sanity Studio, and Stripe are all powerful tools that make development faster, more efficient, and more secure. Next.js offers server-side rendering, which improves performance and SEO, and also provides automatic code splitting, which reduces load times. Meanwhile, Sanity Studio is a flexible and customizable CMS that makes it easy to manage content and collaborate in real-time. Stripe payment system offers easy-to-use APIs that allow developers to securely integrate payment functionality into their websites and applications.
 
-## Stripe.js Integration
+## Fixed Stripe.js Integration  
+
 While working on this project, I encountered a challenge while integrating Stripe.js for payment processing. I was initially unable to receive responses from the backend on requests, which made it difficult to connect the payment system to the site.
 
-After some investigation and research, I discovered that the issue was due to two small details that I had overlooked in the Stripe.js code. By carefully reviewing the code and making some small changes, I was able to successfully integrate Stripe.js into the project and enable payment processing for users.
+After some investigation and research, I discovered that the issue was due to a few small details that I had overlooked in the Stripe.js code. Specifically, I had mistakenly included the cartItems object when mapping items, which was not needed in the Stripe.js implementation. Additionally, I had mislabeled the price ID in one instance of the code, which was causing further errors.
 
-This experience taught me the importance of looking deeper outside the code and doing thorough research to solve problems, and helped me improve my problem-solving skills as a junior developer.
+By carefully reviewing the code and making these small changes, I was able to successfully integrate Stripe.js into the project and enable payment processing for users.
+
+This experience taught me the importance of paying close attention to details in code, and the value of thorough debugging and research to solve problems. It also helped me improve my problem-solving skills as a junior developer. was able to successfully integrate Stripe.js into the project and enable payment processing for users.
 
 # Contact Information
 
