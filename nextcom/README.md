@@ -24,6 +24,11 @@ npm install sanity-studio or yarn add sanity-studio
 
 Next.js, Sanity Studio, and Stripe are all powerful tools that make development faster, more efficient, and more secure. Next.js offers server-side rendering, which improves performance and SEO, and also provides automatic code splitting, which reduces load times. Meanwhile, Sanity Studio is a flexible and customizable CMS that makes it easy to manage content and collaborate in real-time. Stripe payment system offers easy-to-use APIs that allow developers to securely integrate payment functionality into their websites and applications.
 
+Stripe: https://stripe.com/docs
+Sanity: https://www.sanity.io/docs
+Next.js: https://nextjs.org/docs
+
+
 ## Fixed Stripe.js Integration  
 
 While working on this project, I encountered a challenge while integrating Stripe.js for payment processing. I was initially unable to receive responses from the backend on requests, which made it difficult to connect the payment system to the site.
