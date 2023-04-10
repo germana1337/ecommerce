@@ -1,7 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
 import { toast } from 'react-hot-toast';
-import product from '@/sanity-ecom/schemas/product';
-
 const Context = createContext();
 
 //* # I make this state context component to hold the state of the cart. I use the useState hook to create the state variables. I then create the functions that will be used to update the state variables. I then return the state variables and the functions in an object. I then wrap the children in the context provider and pass the object as the value. I then export the context and the context provider. I then import the context provider into the _app.js file and wrap the children in it. I then import the context into the components that need to access the state variables and functions. I then destructure the state variables and functions from the context. I then use the state variables and functions in the components.

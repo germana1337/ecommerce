@@ -1,4 +1,6 @@
 import React from "react";
+import { FaInstagram, FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
+
 
 function Footer() {
   return (
@@ -43,7 +45,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>online shop</h4>
+            <h4>Vetements x Balenciaga</h4>
             <ul>
               <li>
                 <a href="#">watch</a>
@@ -52,10 +54,10 @@ function Footer() {
                 <a href="#">bag</a>
               </li>
               <li>
-                <a href="#">shoes</a>
+                <a href="#">headphones</a>
               </li>
               <li>
-                <a href="#">dress</a>
+                <a href="#">necklaces</a>
               </li>
             </ul>
           </div>
@@ -63,16 +65,16 @@ function Footer() {
             <h4>follow us</h4>
             <div className="social-links">
               <a href="#">
-                <i className="fab fa-facebook-f"></i>
+                <FaFacebook />
               </a>
               <a href="#">
-                <i className="fab fa-twitter"></i>
+                <FaTwitter />
               </a>
               <a href="#">
-                <i className="fab fa-instagram"></i>
+                < FaInstagram />
               </a>
               <a href="#">
-                <i className="fab fa-linkedin-in"></i>
+                <FaLinkedin />
               </a>
             </div>
           </div>

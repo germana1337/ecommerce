@@ -22,7 +22,6 @@ const Product = ({ product: { id, image, name, slug, price }, isDarkMode }) => {
             {name}
           </p>
           <div>
-            <p>lorem lorem lorem <br /> lorem lorem lorem lorem </p>
           </div>
           <p className={productPriceClasses}> ₾ {price}</p>
         </div>

@@ -1,4 +1,4 @@
-## StableStack  E-COMMERCE
+## StableStack E-COMMERCE
 
 [StableStack] is a dynamic website built with Next.js and Sanity Studio. It uses Stripe payment system for transactions and all the content comes from Sanity Studio, which makes it easy for team members or other authorized persons to add and update content dynamically.
 
@@ -28,8 +28,12 @@ Stripe: https://stripe.com/docs
 Sanity: https://www.sanity.io/docs
 Next.js: https://nextjs.org/docs
 
+<<<<<<< Updated upstream
 
 ## Fixed Stripe.js Integration  
+=======
+## Fixed Stripe.js Integration
+>>>>>>> Stashed changes
 
 While working on this project, I encountered a challenge while integrating Stripe.js for payment processing. I was initially unable to receive responses from the backend on requests, which made it difficult to connect the payment system to the site.
 
@@ -43,8 +47,6 @@ This experience taught me the importance of paying close attention to details in
 
 Hey there! My name is Nika Germanishvili, and I'm the developer behind this awesome project. As a junior developer with a background in responsive design, I'm always looking to improve my skills and take on new challenges. I graduated from the Academy of Digital Industry and have been working hard on this project using some amazing tools like Next.js, Sanity Studio, and Stripe.
 
-If you have any questions or feedback about the project, feel free to reach out to me at for personal  email adress [nikagermanishvili@gmail.com], and here is my second Working email adress [germanxcardinal@gmail.com]. I'd love to hear from you and get your thoughts on the project.
+If you have any questions or feedback about the project, feel free to reach out to me at for personal email adress [nikagermanishvili@gmail.com], and here is my second Working email adress [germanxcardinal@gmail.com]. I'd love to hear from you and get your thoughts on the project.
 
 # Thanks for checking out my work, and I hope you enjoy using [StableStack] !
-
-

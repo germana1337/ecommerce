@@ -35,7 +35,6 @@ const Success = () => {
           </button>
         </Link>
       </div>
-
     </div>
   )
 }

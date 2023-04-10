@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   return (
     <div className='layout' style={{ backgroundColor: bodyBgColor, color: bodyTextColor }}>
       <Head>
-        <title>iMax Music Store</title>
+        <title>VETEMENS X BALENCIAGA STORE</title>
       </Head>
       <header>
         <Navbar />
